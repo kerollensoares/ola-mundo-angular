@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ola-mundo": {
+    "ola-mundo-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ola-mundo",
+            "outputPath": "dist/ola-mundo-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ola-mundo:build"
+            "browserTarget": "ola-mundo-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ola-mundo:build:production"
+              "browserTarget": "ola-mundo-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ola-mundo:build"
+            "browserTarget": "ola-mundo-angular:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "ola-mundo-e2e": {
+    "ola-mundo-angular-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ola-mundo:serve"
+            "devServerTarget": "ola-mundo-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ola-mundo:serve:production"
+              "devServerTarget": "ola-mundo-angular:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "ola-mundo"
+  "defaultProject": "ola-mundo-angular"
 }
